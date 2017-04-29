@@ -1,0 +1,11 @@
+La salida del programa es:
+
+    Performs Person's task
+    Invoke Employee's
+    Performs Employee's task
+    Performs Faculty's task
+
+Esto se debe a que la clase Faculty es hija de la clase Employee y a su vez esta de la clase Person.
+
+Cuando se crea un elemento de la clase Faculty sin parametros, primero se llama al constructor de la clase Employee que no recive parametros pero antes de ejecutarce este se invoca al constructor de la clase persona, que imprime: "Performs Person's task".
+Posteriormente al constructor de Employee que al no tener parametros invoca el constructor que imprime "Invoke Employee's" y "Performs Employee's task" en una nueva linea, de igual manera para finalizar imprime el constructor de la clase Faculty que finaliza imprimiendo: "Performs Faculty's task"

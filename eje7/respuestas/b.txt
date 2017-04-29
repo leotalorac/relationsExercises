@@ -1,0 +1,25 @@
+Salida del programa:
+        G
+        G 1
+        G 2
+
+        F
+        G 1
+        F 2
+        G 2
+
+        F
+        H 1
+        E 2
+        H 1
+
+        F
+        G 1
+        E 2
+        G 1
+
+esto se debe a que como G es la clase padre ejecuta sus propios metodos 1 y 2, posteriormente al F ser hijo de G ejecuta sus metodos y al no reescribir el metodod 2 simplemente adiciona el imprimir "F 2" y luego el ejecutar el metodo original.
+
+Luego al ser H hijo de E posee el metodo 2 de su padre pero al reescribir el metodo 1 este se cambia y escribe entonde "H 1" leugo de "E 2" por el polimorfismo, Por ultimo al llamar a la clase E que extiende de F que a su vex extiende de G y al no haber reescrito el metodo 1 en ninguna clase hasta G se ejecuta el metodo 1 de esta clase, y en el caso del metodo 2 se toma solo la adicion hecha en la clase E.
+
+De igual manera cabe resaltar que las clases H y E se imprimen como F ya que no reescribieron el metodo toString();

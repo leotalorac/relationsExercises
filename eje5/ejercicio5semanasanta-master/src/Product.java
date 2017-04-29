@@ -17,6 +17,7 @@ public class Product extends DomainObject {
     }
 
     public void additem(Item i) {
+
         this._items.add(i);
     }
 
