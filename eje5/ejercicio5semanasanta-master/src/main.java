@@ -11,7 +11,7 @@ public class main {
         int iduser =1;
 
         //User data -- only one client--
-        /*
+
         System.out.println("Welcome to the new Software, please insert your data to begin: ");
         System.out.println("Fistname: ");
         String u1 = sc.next();
@@ -35,7 +35,7 @@ public class main {
         iduser++;
         Customer user = new Customer(u1,u2,u3,u4,u5,u6,u7,u8,u9,idtochar);
         //id counters
-        */
+
         int ca=0;
         int pr=0;
         int it=0;
