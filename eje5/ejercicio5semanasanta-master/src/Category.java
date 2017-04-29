@@ -14,7 +14,8 @@ public class Category extends DomainObject{
         _description = d;
     }
 
-    public void addproduct(Product p){
+    public void addproduct(String a,String b,String c,Category d){
+        Product p = new Product(a,b,c,d);
         this._products.add(p);
     }
     public void list(){
@@ -28,5 +29,9 @@ public class Category extends DomainObject{
             System.out.println("Description_Product: " + _products.get(i)._description);
             _products.get(i).info();
         }
+    }
+
+    public ArrayList<Product> get_products() {
+        return _products;
     }
 }

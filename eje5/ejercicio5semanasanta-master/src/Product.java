@@ -16,8 +16,8 @@ public class Product extends DomainObject {
         this._category =c;
     }
 
-    public void additem(Item i) {
-
+    public void additem(String a,Double b, String c,Product d) {
+        Item i = new Item(a,b,c,d);
         this._items.add(i);
     }
 
